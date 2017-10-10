@@ -1,0 +1,112 @@
+
+body,html{
+	background-color: #584f60;
+	color: #fff;
+}
+a.goback{
+	color: #fff;
+	font-size: 35px;
+	display: inline-block;
+	margin: 15px 10px 25px 25px;
+	text-decoration: none;
+}
+.wrapper{
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	/* background-color: #ccc; */
+}
+.wrapper ul.tab>li{
+	font-size: 16px;
+}
+input{
+	background-color: #584f60;
+}
+.products{
+	font-size: 22px;
+}
+.main p{
+	margin-top: 33px;
+}
+.main .phone1{
+	position: relative;
+	border-bottom: 2px solid #fff;
+	margin-top: 33px;
+}
+#mobile1,.phone2{
+	padding-left: 5px;
+}
+.main .phone1 span:after{
+	bottom: 6px;
+	left: 41px;
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 5px #fff solid;
+	border-left: 5px transparent solid;
+	border-right: 5px transparent solid;
+	border-bottom: 5px transparent solid;
+}
+.phone1 p.tip1{
+	position: absolute;
+	bottom: -44px;
+	right: 0;
+	color: red;
+	font-size: 20px;
+	display: none;
+}
+
+.main .phone2{
+	position: relative;
+	margin-top: 30px;
+	border-bottom: 2px solid #fff;
+	margin-bottom: 30px;
+}
+.phone2 p.tip2{
+	position: absolute;
+	bottom: -44px;
+	right: 0;
+	color: red;
+	font-size: 20px;
+	display: none;
+}
+
+em{
+	font-size: 18px;
+}
+.a-1{
+	font-size: 18px;
+	display: block;
+	color: #ccc;
+	text-decoration: underline;
+}
+button{
+	border: none;
+	background-color: #24c789;
+	width: 100%;
+	height: 60px;
+	border-radius: 30px;
+	margin-top: 80px;
+}
+button>a:active,button>a:hover{
+	color: #fff;
+}
+button>a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	line-height: 60px;
+	text-decoration: underline;
+}
+.a-2{
+	display: inline-block;
+	font-size: 12px;
+	color: #fff;
+	text-decoration: underline;
+}
+
+
+
+

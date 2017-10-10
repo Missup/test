@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel='stylesheet' href='css/base.css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/zhu05.css">
+	<title>zhu05</title>
+  <style>
+    #zhuModal button.close {
+      color: white;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <!-- 模态框 star-->
+  <div id="zhuModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="mySmallModalLabel">热门</h3>
+        </div>
+        <div class="modal-body">
+          <ul class="list-2">
+              <li data-dismiss="modal">中国<span>&nbsp+86</span></li>
+              <li data-dismiss="modal">香港<span>+852</span></li>
+              <li data-dismiss="modal">澳门<span>+853</span></li>
+              <li data-dismiss="modal">台湾<span>+886</span></li>
+              <li data-dismiss="modal">美国<span>&nbsp&nbsp+ 1</span></li>
+              <li data-dismiss="modal">加拿大<span>&nbsp&nbsp+ 1</span></li>
+              <li data-dismiss="modal">澳大利亚<span>&nbsp+61</span></li>   
+              <li data-dismiss="modal">英国<span>&nbsp+44</span></li>   
+              <li data-dismiss="modal">法国<span>&nbsp+33</span></li>   
+              <li data-dismiss="modal">日本<span>&nbsp+81</span></li>   
+              <li data-dismiss="modal">韩国<span>&nbsp+82</span></li>   
+              <li data-dismiss="modal">新加坡<span>&nbsp+65</span></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 模态框 end-->
+
+	<div class="wrapper" id="wrapper">
+    <a href="zhu04.html" class="goback">&lt</a>
+    <div class="products" id="tab-main">
+      <div class="main">
+        <p>手机号</p>
+        <div class="phone1">
+          <!-- 模态框按钮 -->
+        	<span class="btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">&nbsp+86</span>
+        	<input type="text" id="mobile1" placeholder="请输入手机号" onblur="checkPhone1()">
+        	<p class="tip1">请输入正确的手机号</p>
+        </div>
+        <button><a href="javascript:;">下一步</a></button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="lib/jquery/jquery-1.12.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/zhu05.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body,html{
+	background-color: #584f60;
+	color: #fff;
+}
+a.goback{
+	color: #fff;
+	font-size: 35px;
+	display: inline-block;
+	margin: 15px 10px 25px 25px;
+	text-decoration: none;
+}
+.wrapper{
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+	/* background-color: #ccc; */
+}
+.wrapper ul.tab>li{
+	font-size: 28px;
+	float: left;
+	margin-right: 20px;
+}
+.wrapper ul.tab>span{
+	float: left;
+	font-size: 24px;
+	color: #CCC;
+	margin-right: 20px;
+}
+
+.products{
+	font-size: 22px;
+}
+.main p{
+	margin-top: 33px;
+}
+.main .phone1{
+	position: relative;
+	border-bottom: 2px solid #ccc;
+	margin-top: 33px;
+}
+input#mobile1{
+	padding-left: 35px;
+	width: 80%;
+	background-color: #584f60;
+}
+.main .phone1 span:after{
+	bottom: 6px;
+	left: 50px;
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 5px #fff solid;
+	border-left: 5px transparent solid;
+	border-right: 5px transparent solid;
+	border-bottom: 5px transparent solid;
+}
+/* 模态框 star*/
+/* 关闭X号 */
+.main .phone1>span {
+  background-color: #584f60;
+}
+span.close1{
+	font-size: 43px;
+	color: #fff;
+	margin-left: 20px;
+}
+.modal-content{
+	width: 100%;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	background-color: #584f60;
+}
+ul.list-1{
+	width: 75%;
+	height: 100%;
+	margin: 0 auto;
+}
+ul.list-1 li{
+	border-bottom: 1px solid #ccc;
+	line-height: 50px;
+}
+
+.modal-dialog{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.list-2 li{
+	position: relative;
+}
+.list-2 li span{
+	position: absolute;
+	right: 0;
+}
+/* 模态框 end*/
+button{
+	border: none;
+	background-color: #24c789;
+	width: 100%;
+	height: 60px;
+	border-radius: 30px;
+	margin-top: 80px;
+}
+button>a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+	color: #fff;
+	text-decoration: underline;
+}
+button>a:active,button>a:hover{
+	color: #fff;
+}
+p.tip1{
+	position: absolute;
+	bottom: -44px;
+	right: 0;
+	color: red;
+	font-size: 20px;
+	display: none;
+}

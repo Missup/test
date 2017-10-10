@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel='stylesheet' href='css/base.css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/zhu06.css">
+	<title>zhu06</title>
+</head>
+<body>
+	<a href="zhu05.html" class="goback">&lt</a>
+	<div class="wrapper" id="wrapper">
+        <ul class="tab clearfix" id="tab-menu">
+            <li class="tab-item active"></li>
+        </ul>
+        <div class="products" id="tab-main">
+            <!-- tab栏模块1 -->
+            <div class="main selected">
+                <p>验证码</p>
+                <div class="phone1">
+                	<input type="text" id="demo_input2" placeholder="四位">
+                    <a href="#" class="a-2">重新获取</a>
+                    <p class="tip1">验证码输入有误</p>
+                </div>
+                <p>密码</p>
+                <div class="phone2">
+                	<input type="password" id="demo_input1" placeholder="至少六位">
+                 	<img id="demo_img" onclick="hideShowPsw()" src="images/none.png"> 
+                	<p class="tip2">输入密码格式错误</p>
+                </div>
+                <em>收不到短信?</em><br>
+                <a href="#" class="a-1">重新获取</a>
+                <button><a href="javascript:;">下一步</a></button>
+            </div>
+        </div>
+    </div>
+<script src="lib/jquery/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/zhu06.js"></script>
+<script>
+    function subStr(url) {
+        var obj = {};
+        var str = url.split('?')[1];
+
+        //console.log(str);
+        var str2 = str.split('&');
+        // console.log(str2);
+        for (var k in str2) {
+            var str3 = str2[k].split('=');
+            obj[str3[0]] = str3[1];
+        }
+        return obj;
+    }
+    var arr = subStr(window.location.href);
+    // console.log(arr);
+    // console.log(arr.a);
+    $(".tab-item").text("验证码已发送至 "+arr.a);
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel='stylesheet' href='css/base.css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/zhu03.css">
+	<title>zhu03</title>
+</head>
+<body>
+	<a href="zhu02.html" class="goback">&lt</a>
+	<div class="wrapper" id="wrapper">
+        <ul class="tab clearfix" id="tab-menu">
+            <li class="tab-item active">忘记密码</li>
+        </ul>
+        <div class="products" id="tab-main">
+            <div class="main">
+                <p>手机号</p>
+                <div class="phone1">
+                	<!-- 模态框按钮 -->
+                    <span class="btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">&nbsp+86</span>
+                	<input type="text" id="mobile1" placeholder="请输入手机号" onblur="checkPhone1()">
+                	<p class="tip1">请输入正确的手机号</p>
+                </div>
+                <button><a href="#">获取验证码</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- 模态框 star-->
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+            <span class="close1">×</span>
+                <ul class="list-1">
+                    <li class="li-1">    
+                        <h3>热门</h3>
+                        <ul class="list-2">
+                            <li>中国<span>&nbsp+86</span></li>
+                            <li>香港<span>+852</span></li>
+                            <li>澳门<span>+853</span></li>
+                            <li>台湾<span>+886</span></li>
+                            <li>美国<span>&nbsp&nbsp+ 1</span></li>
+                            <li>加拿大<span>&nbsp&nbsp+ 1</span></li>
+                            <li>澳大利亚<span>&nbsp+61</span></li>   
+                            <li>英国<span>&nbsp+44</span></li>   
+                            <li>法国<span>&nbsp+33</span></li>   
+                            <li>日本<span>&nbsp+81</span></li>   
+                            <li>韩国<span>&nbsp+82</span></li>   
+                            <li>新加坡<span>&nbsp+65</span></li>   
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 模态框 end-->
+<script src="lib/jquery/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/zhu03.js"></script>
+</body>
+</html>
