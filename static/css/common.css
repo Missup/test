@@ -2,16 +2,16 @@
 html, body{
   font-family: PingFangSC-light, "Helvetica Neue", Helvetica, "Microsoft Yahei", STHeiTi, Arial, sans-serif;
 }
-/* input, button, select, textarea {
-  border: 1px solid #c7c7c7;
-  outline: none;
-  -webkit-appearance: none;
-} */
-input, button, textarea {
+input, button, select, textarea {
   border: 1px solid #c7c7c7;
   outline: none;
   -webkit-appearance: none;
 }
+/* input, button, textarea {
+  border: 1px solid #c7c7c7;
+  outline: none;
+  -webkit-appearance: none;
+} */
 .fl {
   float: left;
 }
