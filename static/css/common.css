@@ -14,7 +14,6 @@ input, button, textarea {
 select {
   border: 1px solid #c7c7c7;
   outline: none;
-  /* -webkit-appearance: none; */
   border-radius: 0;
 }
 .fl {
@@ -71,28 +70,28 @@ select {
 }
 /* 图标 */
 .common-pic01 img {
-  width: 1.94rem;
-  height: 2.1rem;
+  width: 2.18rem;
+  height: 1.66rem;
 }
 .common-pic02 img {
-  width: 2.32rem;
-  height: 2.08rem;
+  width: 2.14rem;
+  height: 1.9rem;
 }
 .common-pic03 img {
-  width: 2.38rem;
-  height: 2.08rem;
+  width: 1.62rem;
+  height: 1.58rem;
 }
 .common-pic04 img {
-  width: 2.22rem;
-  height: 2.4rem;
+  width: 1.68rem;
+  height: 1.78rem;
 }
 .common-pic05 img {
-  width: 2.52rem;
-  height: 1.64rem;
+  width: 1.4rem;
+  height: 2.0rem;
 }
 .common-pic06 img {
-  width: 2.12rem;
-  height: 2.12rem;
+  width: 1.84rem;
+  height: 1.7rem;
 }
 /* 提示 */
 .hint {
@@ -288,7 +287,7 @@ select {
   padding: 2.3rem 0.48rem 0.62rem;
   font-size: 0.66rem;
   color: #090909;
-  transition: all 1s;
+  transition: all .3s;
   -webkit-transition: all .3s;
   transform: translateY(-16.0rem);
   -webkit-transform: translateY(-16.0rem);
