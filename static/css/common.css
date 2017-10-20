@@ -12,9 +12,9 @@ input, button, textarea {
   border-radius: 0;
 }
 select {
-  /* border: 1px solid #c7c7c7; */
+  border: 1px solid #c7c7c7;
   outline: none;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   border-radius: 0;
 }
 .fl {
