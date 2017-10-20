@@ -1,0 +1,74 @@
+@charset 'utf-8';
+.history-content {
+  height: 3.54rem;
+  border-bottom: 0.1rem solid #e7eaea;
+}
+.history-content a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 1.16rem;
+  position: relative;
+  background-color: #fff;
+}
+.history-content a.active {
+  background-color: #f3f7fa;
+}
+.history-bg {
+  position: absolute;
+  width: 1.42rem;
+  height: 0.94rem;
+  background: url('../images/history-bg.png') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  top: 0.08rem;
+  left: 0.1rem;
+}
+.history-pic {
+  width: 2.52rem;
+  height: 2.4rem;
+  position: relative;
+  margin-top: 0.68rem;
+  margin-right: 0.7rem;
+}
+.history-pic img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.history-title {
+  font-size: 0.78rem;
+  color: #060606;
+  padding-top: 0.8rem;
+}
+.history-title p {
+  max-width: 7.2rem;
+}
+.history-title p:nth-child(2) {
+  font-size: 0.52rem;
+}
+.history-hint {
+  padding-top: 1.0rem;
+ }
+.history-time {
+  font-size: 0.48rem;
+  color: #090909;
+}
+.history-hint p:nth-child(2) {
+  margin-top: 0.24rem;
+  font-size: 0.44rem;
+}
+.history-hint i {
+  font-size: 0.52rem;
+  margin-right: 0.2rem;
+  color: #0d0d0d;
+  vertical-align: middle;
+}
+.history-wrong, .history-wrong i {
+  color: #e26564;
+}
+.history-right, .history-right i {
+  color: #58c4b2;
+}

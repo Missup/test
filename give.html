@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>线下充值+赠送</title>
+  <link rel="stylesheet" type="text/css" href="https://static.vsochina.com/public/resetcss/mreset.css"/>
+  <link rel="stylesheet" href="static/font/iconfont.css">
+  <link rel="stylesheet" href="static/css/common.css">
+  <link rel="stylesheet" href="static/css/subpage.css">
+  <style>
+    .recharge-class select {
+      width: 9.32rem;
+      height: 1.4rem;
+      line-height: 1.4rem;
+      padding: 0 0.32rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <!-- 公用头部 -->
+    <div id="header">
+      <a href="apply.html" class="back"><i class="icon iconfont icon-more"></i>主页</a>
+      <img src="static/images/logo.png" alt="logo">
+      <i class="icon iconfont icon-sandaogangwutianchong header-show"></i>
+    </div>
+
+    <!-- 用户主页 -->
+    <div id="sidebar">
+      <div class="sidebar-list sidebar-username">
+        <p><i class="icon iconfont icon-yonghuming"></i>用户名</p>
+        <p>18705116689</p>
+      </div>
+      <div class="sidebar-list sidebar-nickname">
+        <p><i class="icon iconfont icon-biaoqian"></i>昵称</p>
+        <p>周美玲</p>
+      </div>
+      <div class="sidebar-list sidebar-company">
+        <p><i class="icon iconfont icon-weibiaoti102"></i>分公司</p>
+        <p>苏州蓝海彤翔系统科技有限公司</p>
+      </div>
+      <div class="sidebar-list sidebar-job">
+        <p><i class="icon iconfont icon-zhiwei"></i>职位</p>
+        <p>销售</p>
+      </div>
+      <a href="javascript:;" id="exit"><i class="icon iconfont icon-dianyuan01"></i>退出登录</a>
+    </div>
+
+    <!-- 标题 -->
+    <div class="top">
+      <span>线下充值+赠送</span>
+      <div class="line"></div>
+    </div>
+    
+    <!-- 主体 -->
+    <div class="recharge-main common">
+      <div class="recharge-block recharge-write">
+        <div class="recharge-bg"></div>
+        <div class="recharge-info recharge-username clearfix">
+          <span>客户名称：</span>
+          <input type="text">
+        </div>
+        <div class="recharge-info recharge-account clearfix">
+          <span>客户账号：</span>
+          <input type="text">
+        </div>
+        <div class="recharge-info recharge-class clearfix">
+          <span>充值币种：</span>
+          <select name="" id="">
+            <option value="">人民币</option>
+            <option value="">美元</option>
+          </select>
+        </div>
+        <div class="recharge-info recharge-money clearfix">
+          <span>充值金额：</span>
+          <input type="text" placeholder="兑换：XXXX创意币">
+        </div>
+        <div class="recharge-info recharge-money clearfix">
+          <span>赠送创意币：</span>
+          <input type="text">
+        </div>
+        <div class="recharge-info recharge-explain clearfix">
+          <span>预充情况说明：</span>
+          <textarea maxlength='200' placeholder="最多输入200个字符"></textarea>
+        </div>
+      </div>
+      <!-- 抄送 -->
+      <div class="recharge-block recharge-copy">
+        <div class="recharge-bg"></div>
+        <div class="recharge-title">抄送</div>
+        <div class="recharge-job-line">
+          <div class="recharge-job clearfix">
+            <span class="fl"><i class="recharge-circle"></i>分公司负责人</span>
+            <a href="javascript:;" class="recharge-edit fr">编辑</a>
+          </div>
+          <p class="recharge-name">刘德华、周杰伦、周美灵、德莱文</p>
+        </div>
+        <div class="recharge-job-line">
+          <div class="recharge-job  clearfix">
+            <span class="fl"><i class="recharge-circle"></i>销售负责人</span>
+            <a href="javascript:;" class="recharge-edit fr">编辑</a>
+          </div>
+          <p class="recharge-name">陈小春</p>
+        </div>
+      </div>
+      <!-- 审批 -->
+      <div class="recharge-block recharge-approval">
+        <div class="recharge-bg"></div>
+        <div class="recharge-title">审批</div>
+        <div class="recharge-job-line recharge-process active">
+          <div class="recharge-job">
+            <div class="recharge-process-arrow"></div>
+            <span>分公司负责人</span>
+          </div>
+        </div>
+        <div class="recharge-job-line recharge-process">
+          <div class="recharge-job">
+            <div class="recharge-process-arrow"></div>
+            <span>销售负责人</span>
+          </div>
+        </div>
+      </div>
+      <!-- 提交 -->
+      <div class="recharge-footer">
+        <a href="javascript:;" class="recharge-submit">提 交</a>
+      </div>
+    </div>
+
+    <!-- 编辑弹窗 -->
+    <div class="popup">
+      <div class="mask"></div>
+      <div class="popup-main">
+        <div class="popup-header"><i class="icon iconfont icon-zhanghao"></i>新增人员</div>
+        <div class="popup-title">职位<span>分公司负责人</span></div>
+        <div class="popup-name">
+          <ul class="clearfix">
+            <li class="active">
+              <input type="checkbox" checked>
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+            <li>
+              <input type="checkbox">
+              <i class="icon iconfont icon-fangkuang1 popup-check"></i>
+              <i class="icon iconfont icon-gougou popup-checked"></i>
+              <span>陈信宏</span>
+            </li>
+          </ul>
+        </div>
+        <div class="popup-btn">
+          <a href="javascript:;" class="popup-cancle">取 消</a>
+          <a href="javascript:;" class="popup-sure">确 认</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 未知错误弹窗 -->
+    <div class="common-popup">
+      <div class="common-mask"></div>
+      <div class="common-main">
+        <p><i class="icon iconfont icon-cha"></i>未知错误！</p>
+        <a href="javascript:;" class="common-close">确 定</a>
+      </div>
+    </div>
+
+    <!-- 加载中。。。 -->
+    <div class="common-loading active">
+      <div class="common-mask"></div>
+      <img src="static/images/load.gif" alt="加载中。。。">
+    </div>
+
+    <!-- 公用底部 -->
+    <div id="footer">
+      <a href="apply.html" class="footer-title fl"><i class="footer-icon footer-apply"></i>申请</a>
+      <a href="dynamic.html" class="footer-title fl">
+        <i class="footer-icon footer-message"></i>
+        <!-- 消息的小圆点 -->
+        <i class="footer-status01"></i>
+        <!-- 代办的圆点  -->
+        <i class="footer-status02">4</i>
+        动态
+      </a>
+      <a href="history.html" class="footer-title fl"><i class="footer-icon footer-history"></i>历史</a>
+    </div>
+  </div>
+  
+  <!-- 百度统计代码 -->
+  <div style="display: none;">
+    <script type="text/javascript" charset="utf-8" src="https://static.vsochina.com/ucstatic/js/global_statistics.js"></script>
+  </div>
+  <script src="https://static.vsochina.com/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://static.vsochina.com/public/fontSize/fontSize.js"></script>
+  <script>
+    $(function () {
+      // 控制底部tab切换时候的效果
+      var currentUrl = window.location.href;
+      $('.footer-title').each(function(index, el) {
+        var aUrl = $(this).attr('href');
+        if (currentUrl.indexOf(aUrl) !== -1) {
+          $(this).addClass('active').siblings().removeClass('active');
+        }
+      });
+
+      // 判断返回按钮显示
+      var arrUrl = ['apply', 'dynamic', 'history'];
+      for (var i = 0; i < arrUrl.length; i ++) {
+        if (currentUrl.indexOf(arrUrl[i]) != -1) {
+          $('.back').removeClass('active');
+          break;
+        } else {
+          $('.back').addClass('active');
+        }
+      }
+
+      // 点击头部'三'展开用户主页
+      $('.header-show').click(function() {
+        $('#sidebar').toggleClass('active');
+      });
+
+      // 点击编辑弹出弹窗
+      $('.recharge-edit').click(function() {
+        $('.popup').addClass('active');
+        $('body').addClass('active');
+      });
+
+      // 取消、确认关闭弹窗
+      $('.popup-btn a').click(function() {
+        $('.popup').removeClass('active');
+        $('body').removeClass('active');
+      });
+
+      // 遮罩层关闭弹窗
+      $('.mask').click(function() {
+        $('.popup').removeClass('active');
+        $('body').removeClass('active');
+      });
+
+      // 勾选
+      $('.popup-name li').click(function() {
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active");
+          $(this).find('input').prop("checked", false);
+        } else {
+          $(this).addClass("active");
+          $(this).find("input").prop("checked", true);
+        }
+      });
+
+      // 弹窗未知错误
+      $('.recharge-submit').click(function() {
+        $('.common-popup').show();
+        $('body').addClass('active');
+      });
+      $('.common-close').click(function() {
+        $('.common-popup').hide();
+        $('body').removeClass('active');
+      });
+      $('.common-mask').click(function() {
+        $('.common-popup').hide();
+        $('body').removeClass('active');
+      });
+
+      // loading
+      setTimeout(function() {
+        $('.common-loading').hide()
+      }, 1000)
+    })
+  </script>
+</body>
+</html>

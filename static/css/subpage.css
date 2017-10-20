@@ -1,0 +1,351 @@
+@charset 'utf-8';
+body {
+  overflow: auto;
+}
+body.active {
+  overflow: hidden;
+}
+.recharge-block {
+	position: relative;
+  border-bottom: 2px solid #e4e5e6;
+}
+.recharge-bg {
+  position: absolute;
+  width: 1.42rem;
+  height: 0.94rem;
+  background: url('../images/history-bg.png') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  top: 0.08rem;
+  left: 0.1rem;
+}
+/* 填写 */
+.recharge-write {
+  padding-top: 1.2rem;
+  padding-bottom: 0.6rem;
+}
+.recharge-info {
+  margin-bottom: 0.46rem;
+}
+.recharge-info span {
+  float: left;
+  width: 4.24rem;
+  text-align: right;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  color: #060606;
+  font-size: 0.54rem;
+}
+.recharge-info input {
+  width: 9.32rem;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  padding: 0 0.32rem;
+}
+.recharge-info textarea {
+  width: 9.32rem;
+  padding: 0.28rem 0.32rem;
+  line-height: 0.8rem;
+  resize: none;
+  word-break: break-all;
+  height: 3.52rem;
+}
+/* 抄送、审批 */
+.recharge-copy, .recharge-approval, .recharge-textarea {
+  font-size: 0.64rem;
+  padding: 0.7rem 1.4rem 0;
+  color: #060606;
+}
+.recharge-title {
+  color: #00c6c5;
+  margin-bottom: 0.7rem;
+}
+.recharge-job {
+  height: 0.96rem;
+  line-height: 0.96rem;
+}
+.recharge-job span {
+  color: #666;
+}
+.recharge-job-line {
+  margin-bottom: 0.7rem;
+}
+.recharge-job .recharge-circle {
+  display: inline-block;
+  width: 0.52rem;
+  height: 0.52rem;
+  background-color: #00c6c5;
+  border-radius: 100%;
+  position: relative;
+  top: 0.04rem;
+  margin-right: 0.36rem;
+}
+.recharge-name {
+  padding-left: 0.86rem;
+}
+.recharge-edit {
+  color: #2b89a8;
+  font-size: 0.52rem;
+}
+.recharge-process {
+  position: relative;
+  padding-left: 0.86rem;
+}
+.recharge-process.active .recharge-process-arrow {
+  display: none;
+}
+.recharge-process-arrow {
+  position: absolute;
+  background: url('../images/arrow.png') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 0.58rem;
+  height: 1.62rem;
+  bottom: 0.48rem;
+  left: 0;
+}
+/* 提交 */
+.recharge-footer {
+  height: 4.88rem;
+  background-color: #f6f5f5;
+  padding-top: 1.8rem;
+}
+.recharge-submit, .recharge-submit:active {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0.76rem;
+  width: 10.12rem;
+  height: 1.52rem;
+  line-height: 1.52rem;
+  color: #fff;
+  font-size: 0.88rem;
+  background-image: -webkit-linear-gradient(to left, #00f2bf, #00c4ec);
+  background-image: linear-gradient(to left, #00f2bf, #00c4ec);
+}
+/* 弹窗 */
+.popup {
+  position: relative;
+  z-index: 9997;
+  display: none;
+}
+.popup.active {
+  display: block;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+  opacity: .7;
+  background-color: #000;
+}
+.popup-main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 11.68rem;
+  border-radius: 0.08rem;
+  background-color: #fff;
+  overflow: hidden;
+  font-size: 0.64rem;
+  color: #060606;
+}
+.popup-header {
+  height: 1.76rem;
+  line-height: 1.76rem;
+  color: #fff;
+  font-size: 0.88rem;
+  background-color: #00c6c5;
+  text-align: center;
+}
+.popup-header i {
+  font-size: 0.8rem;
+  margin-right: 0.36rem;
+}
+.popup-title {
+  text-align: center;
+  padding: 0.4rem 0 0.5rem;
+}
+.popup-title span {
+  font-size: 0.54rem;
+  margin-left: 0.56rem;
+}
+.popup-name {
+  padding: 0 0.6rem;
+}
+.popup-name li {
+  float: left;
+  position: relative;
+  margin-right: 1.0rem;
+  width: 2.8rem;
+  margin-bottom: 0.4rem;
+}
+.popup-name li:nth-child(3n) {
+  margin-right: 0;
+}
+.popup-name li input {
+  display: none;
+}
+.popup-check {
+  font-size: 0.56rem;
+}
+.popup-checked {
+  position: absolute;
+  font-size: 0.9rem;
+  color: #00c6c5;
+  left: -0.12rem;
+  top: -0.28rem;
+  display: none;
+}
+.popup-name li.active .popup-checked {
+  display: block;
+}
+.popup-btn {
+  padding: 0.5rem 1.38rem 0.8rem;
+}
+.popup-btn a {
+  display: inline-block;
+  width: 3.4rem;
+  height: 1.24rem;
+  line-height: 1.24rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.66rem;
+  background-color: #00c6c5;
+  border-radius: 0.62rem;
+}
+.popup-cancle {
+  margin-right: 1.92rem;
+}
+/* 拒绝、执行弹窗 */
+.recharge-popup .popup-main {
+  padding: 1.1rem;
+  border: 0.08rem solid #00c6c5;
+  text-align: center;
+}
+.recharge-popup .popup-btn a {
+  line-height: 1.2rem;
+  border: 1px solid #00c6c5;
+  color: #00c6c5;
+  background-color: #fff;
+}
+.recharge-popup .popup-btn {
+  padding: 0;
+  padding-top: 0.68rem;
+}
+.recharge-popup .popup-cancle {
+  margin-right: 1.2rem;
+}
+.recharge-popup .popup-btn a.popup-sure {
+  border-color: #00c6c5;
+  color: #fff;
+  background-color: #00c6c5;
+}
+/* 头部时间 */
+.recharge-top {
+  height: 1.64rem;
+  line-height: 1.64rem;
+  font-size: 0.54rem;
+  background-color: #f6f5f5;
+  padding: 0 1.4rem;
+  border-bottom: none;
+}
+/* 销账 */
+.recharge-delete {
+  padding: 0.18rem 1.4rem 0.92rem;
+  background-color: #f6f5f5;
+}
+.recharge-delete.active {
+  display: none;
+}
+/* 信息 */
+.recharge-infos {
+  padding: 0.8rem 1.4rem 0.34rem;
+  font-size: 0.64rem;
+}
+.recharge-info-title {
+  color: #666666;
+}
+.recharge-info-remarks {
+  color: #999999;
+  font-size: 0.54rem;
+}
+span.recharge-right, .recharge-right i {
+  color: #58c4b2;
+}
+span.recharge-wrong, .recharge-wrong i {
+  color: #e26564;
+}
+span.recharge-wait, .recharge-wait i {
+  color: #707070;
+}
+.recharge-job .icon {
+  font-size: 0.6rem;
+  margin-right: 0.2rem;
+}
+/* 执行和拒绝 */
+.recharge-cancle, .recharge-sure, .recharge-cancle:active {
+  float: left;
+  display: block;
+  text-align: center;
+  border-radius: 0.76rem;
+  width: 5.84rem;
+  height: 1.52rem;
+  line-height: 1.44rem;
+  font-size: 0.88rem;
+  border: 2px solid #00c6c5;
+  color: #00c6c5;
+}
+.recharge-sure, .recharge-sure:active {
+  float: right;
+  background-color: #00c6c5;
+  border-color: #00c6c5;
+  color: #fff;
+}
+.recharge-action {
+  padding: 1.8rem 1.14rem 0;
+}
+.recharge-action.active {
+  display: none;
+}
+/* 充值销账备注 */
+.recharge-textarea {
+  padding-bottom: 0.6rem;
+}
+.recharge-textarea textarea {
+  width: 100%;
+  padding: 0.28rem 0.32rem;
+  line-height: 0.8rem;
+  resize: none;
+  word-break: break-all;
+  height: 3.52rem;
+  font-size: 0.54rem;
+}
+.rechargeDel .recharge-approval, .rechargeDelMsg .recharge-approval {
+  border: none;
+}
+.recharge-block-btn {
+  height: 4.0rem;
+  padding-top: 1.04rem;
+}
+.recharge-block-btn .recharge-submit, .recharge-block-btn .recharge-submit:active {
+  width: 11.36rem;
+}
+.recharge-bgc {
+  width: 100%;
+  height: 1.32rem;
+  background-color: #f6f5f5;
+}
+.rechargeDelMsg .common-tag-del {
+  top: auto;
+  bottom: -1.6rem;
+}
+.rechargeDelMsg .recharge-action {
+  padding-top: 2.4rem;
+}
