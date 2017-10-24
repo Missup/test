@@ -254,7 +254,7 @@
   <!-- 侧边悬浮 -->
   <div class="sidebar">
     <a href="#" class="sidebar-edit"><img src="static/images/icon03.png" height="28" width="28" alt=""></a>
-    <a href="#" class="sidebar-ask"><img src="static/images/icon04.png" height="28" width="30" alt=""></a>
+    <a href="skype:VSOCloud Render Farm?chat" onclick="return skypeCheck();" class="sidebar-ask"><img src="static/images/icon04.png" height="28" width="30" alt=""></a>
   </div>
 
   <!-- 留言弹窗 -->
@@ -380,6 +380,16 @@
           return;
         }
       });
+
+      // 是否登录
+      console.log(getCookie('vso_uname'))
+      if (getCookie('vso_uname')) {
+        // 存在
+        console.log(111111, '存在')
+      } else {
+        // 不存在
+        console.log(222222, '不存在')
+      }
     })
   </script>
 </body>
