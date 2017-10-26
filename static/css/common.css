@@ -253,6 +253,7 @@ select {
 }
 .mreq-advantage-lists ul {
   width: 27.6rem;
+  padding-bottom: 1.2rem;
 }
 .mreq-advantage-lists li {
   float: left;
