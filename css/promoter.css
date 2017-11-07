@@ -1,0 +1,451 @@
+@charset 'utf-8';
+* {
+  box-sizing: border-box;
+}
+.site-header-upper ul.pull-right {
+  margin-right: 0 !important;
+}
+.promoter {
+	font-family: 'microsoft yahei';
+}
+a:link, a:active, a:visited {
+  text-decoration: none;
+}
+/* banner */
+.prom-banner {
+  width: 100%;
+  height: 480px;
+  background: url('../img/newprom-banner.jpg') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.prom-banner .site-header-1190 {
+  position: relative;
+  height: 100%;
+}
+.prom-rank {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  opacity: .85;
+  filter: alpha(opacity=85);
+  position: absolute;
+  right: 0;
+  top: 40px;
+  padding: 0 18px;
+}
+.list_lh {
+  height: 330px;
+  overflow: hidden;
+}
+.prom-rank-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff5101;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+.prom-rank li {
+  height: 33px;
+  line-height: 32px;
+  border-bottom: 1px dashed #ffb080;
+  font-size: 14px;
+}
+.prom-rank-name {
+  float: left;
+}
+.prom-rank-money {
+  float: right;
+}
+.prom-rank-money i {
+  color: #ff5101;
+  font-weight: bold;
+ }
+.prom-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  width: 542px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 34px;
+  background-color: #fef4db;
+  color: #ff5101;
+  font-weight: bold;
+  border-radius: 35px;
+  margin-left: -370px;
+  text-align: center;
+ }
+ .prom-btn:hover {
+  color: #fff;
+  background: linear-gradient(to right, #ff4501, #ff660b);
+  background: -moz-linear-gradient(to right, #ff4501, #ff660b);
+  background: -webkit-gradient(to right, #ff4501, #ff660b);
+  background: -o-linear-gradient(to right, #ff4501, #ff660b);
+  background: -ms-linear-gradient(to right, #ff4501, #ff660b);
+  filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ff4501',endcolorstr='#ff660b',gradientType=1);
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ff4501',endcolorstr='#ff660b',gradientType=1);
+ }
+ /* 代理商介绍 */
+ .prom-info {
+  height: 502px;
+ }
+ .prom-info-left {
+  padding-top: 130px;
+ }
+.prom-info-title, .prom-process-title {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.prom-info-content, .prom-process-content {
+  font-size: 18px;
+  color: #666;
+  line-height: 32px;
+}
+.prom-info-right {
+  padding-top: 84px;
+  padding-right: 16px;
+}
+.prom-login {
+  margin-top: 40px;
+}
+.prom-info-btn {
+  margin-top: 40px;
+  display: block;
+  width: 350px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 26px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #ff4501, #ff660b);
+  background: -moz-linear-gradient(to right, #ff4501, #ff660b);
+  background: -webkit-gradient(to right, #ff4501, #ff660b);
+  background: -o-linear-gradient(to right, #ff4501, #ff660b);
+  background: -ms-linear-gradient(to right, #ff4501, #ff660b);
+  filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ff4501',endcolorstr='#ff660b',gradientType=1);
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ff4501',endcolorstr='#ff660b',gradientType=1);
+}
+.prom-info-btn:hover {
+  color: #fff;
+  background: linear-gradient(to left, #ff4501, #ff660b);
+  background: -moz-linear-gradient(to left, #ff4501, #ff660b);
+  background: -webkit-gradient(to left, #ff4501, #ff660b);
+  background: -o-linear-gradient(to left, #ff4501, #ff660b);
+  background: -ms-linear-gradient(to left, #ff4501, #ff660b);
+  filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ff660b',endcolorstr='#ff4501',gradientType=1);
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ff660b',endcolorstr='#ff4501',gradientType=1);
+}
+/* 如何赚钱 */
+.prom-process {
+  height: 494px;
+  width: 100%;
+  background: url('../img/bg01.jpg') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.prom-process-left {
+  padding-top: 134px;
+}
+.prom-process-step {
+  padding-top: 14px;
+}
+.prom-process-step span {
+  display: inline-block;
+  font-size: 14px;
+  color: #999999;
+  vertical-align: top;
+  margin-right: 140px;
+}
+.prom-process-step span.special {
+  margin-right: 0;
+}
+.prom-process-step .special a {
+  color: #ff6101;
+  text-decoration: underline;
+}
+.prom-process-right {
+  padding-top: 110px;
+}
+/* 服务包 */
+.prom-service {
+  padding-bottom: 92px;
+}
+.prom-header {
+  text-align: center;
+  padding-top: 78px;
+}
+.prom-title {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+}
+.prom-title i {
+  position: absolute;
+  width: 228px;
+  height: 2px;
+  top: 23px;
+}
+.prom-title .prom-title-l {
+  background: url('../img/title-left.png') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  left: -270px;
+}
+.prom-title .prom-title-r {
+  background: url('../img/title-right.png') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  right: -270px;
+}
+.prom-title-sub {
+  font-size: 18px;
+  color: #666666;
+  line-height: 32px;
+  margin-top: 30px;
+}
+.prom-table {
+  margin-top: 50px;
+  width: 100%;
+}
+.prom-table-title {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  color: #fff;
+  background: linear-gradient(to right, #ff7901, #ffb000);
+  background: -moz-linear-gradient(to right, #ff7901, #ffb000);
+  background: -webkit-gradient(to right, #ff7901, #ffb000);
+  background: -o-linear-gradient(to right, #ff7901, #ffb000);
+  background: -ms-linear-gradient(to right, #ff7901, #ffb000);
+  filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ff7901',endcolorstr='#ffb000',gradientType=1);
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr='#ff7901',endcolorstr='#ffb000',gradientType=1);
+}
+.prom-table-title span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.prom-table-title a {
+  font-size: 14px;
+  color: #fff;
+}
+.prom-table-lists {
+  border: 1px solid #e9eaee;
+  border-top: 0;
+  width: 100%;
+  height: 287px;
+}
+.prom-table-lists li {
+  float: left;
+  width: 25%;
+  height: 100%;
+  border-left: 1px solid #e9eaee;
+  text-align: center;
+}
+.prom-table-lists.active li {
+  width: 20%;
+}
+.prom-table-lists li:first-child {
+  border-left: 0;
+}
+.prom-table-odd {
+  background-color: #f8f9fb;
+}
+.prom-table-even {
+  background-color: #eef0f5;
+}
+.prom-table-top {
+  font-weight: bold;
+  font-size: 18px;
+  color: #003333;
+  display: block;
+  padding-top: 26px;
+  margin-bottom: 10px;
+}
+.prom-table-price {
+  color: #ff6101;
+  font-size: 24px;
+  line-height: 50px;
+}
+.prom-table-price i {
+  font-size: 42px;
+}
+.dash-line {
+  width: 201px;
+  height: 2px;
+  background: url('../img/dash.png') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  margin: 8px auto 0;
+}
+.prom-table-avatange {
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 14px;
+}
+.prom-table-btn {
+  padding: 14px 0;
+}
+.prom-table-btn a, .prom-login a {
+  display: inline-block;
+  width: 120px;
+  height: 36px;
+  border: 1px solid #ff6101;
+  text-align: center;
+  line-height: 34px;
+  font-size: 14px;
+  border-radius: 18px;
+}
+.prom-table-lists.active .prom-table-btn a {
+  width: 100px;
+}
+.prom-table-btn .prom-table-share, .prom-login .prom-login-left {
+  background-color: #ff6101;
+  color: #fff;
+  margin-right: 8px;
+}
+.prom-table-btn .prom-table-share:hover, .prom-login .prom-login-left:hover {
+  background-color: #e83700;
+  border-color: #e83700;
+}
+.prom-table-btn .prom-table-buy, .prom-login .prom-login-right {
+  color: #ff6101;
+}
+.prom-table-btn .prom-table-buy:hover, .prom-login .prom-login-right:hover {
+  background-color: #ff6101;
+  color: #fff;
+}
+.prom-table-haven {
+  color: #ff6101;
+}
+/* 查看收益提现 */
+.prom-action {
+  height: 1983px;
+  width: 100%;
+  background: url('../img/bg02.jpg') no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.prom-action-main {
+  padding-top: 86px;
+}
+.prom-action-right {
+  font-size: 24px;
+  color: #666666;
+  line-height: 44px;
+}
+.prom-action-right span {
+  font-weight: bold;
+  font-size: 32px;
+  color: #ff6101;
+}
+.prom-action-one .prom-action-right {
+  padding-top: 130px;
+}
+.prom-action-part {
+  margin-bottom: 160px;
+}
+.prom-action-two .prom-action-right {
+  padding-top: 158px;
+  padding-left: 80px;
+}
+.prom-action-three .prom-action-right {
+  padding-top: 100px;
+  padding-left: 130px;
+}
+.prom-action-three {
+  margin-bottom: 0;
+}
+.prom-action-btn {
+  width: 510px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 45px;
+  margin-top: 80px;
+}
+
+.prom-links {
+  padding-bottom: 82px;
+}
+.prom-links-icon {
+  width: 106px;
+  height: 106px;
+  margin: 0 auto;
+}
+.prom-links-red {
+  box-shadow: 4px 4px 10px rgba(255, 81, 79, .3);
+}
+.prom-links-yellow {
+  box-shadow: 4px 4px 10px rgba(252, 176, 0, .3);
+}
+.prom-links-blue {
+  box-shadow: 4px 4px 10px rgba(1, 182, 255, .3);
+}
+.prom-links-main {
+  padding-top: 92px;
+}
+.prom-links-main li {
+  float: left;
+  width: 16.66%;
+  text-align: center;
+}
+.prom-links-main li a {
+  display: block;
+  width: 106px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  transition: top .2s;
+  -moz-transition: top .2s;
+  -webkit-transition: top .2s;
+  -o-transition: top .2s;
+}
+.prom-links-main li p {
+  font-size: 20px;
+  color: #666;
+  margin-top: 20px;
+}
+.prom-links-main li a:hover {
+  top: -6px;
+}
+.prom-login-center {
+  text-align: center;
+  margin-top: 80px;
+}
+.prom-login-center a {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 48px;
+  border-radius: 45px;
+}
+.prom-login-center a.prom-login-left {
+  margin-right: 50px;
+}
+/* copy */
+.copy-hidden {
+  position: absolute;
+  right: 9999px;
+}
+.pop-modal-content {
+  padding-bottom: 0;
+}
+#pop_new_copy .copy-info, #pop_old_copy .copy-info {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  padding-top: 24px;
+  line-height: 40px;
+}
+.copy-info span {
+  font-size: 16px;
+  font-weight: bold;
+}
