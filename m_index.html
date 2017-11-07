@@ -11,7 +11,6 @@
   <link rel="stylesheet" type="text/css" href="css/promoter_h5.css" />
   <script src="//static.vsochina.com/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="//static.vsochina.com/public/fontSize/fontSize.js"></script>
-  <script src="js/scroll.js"></script>
   <script>
     (function () {
       var url = location.href;
@@ -125,7 +124,7 @@
   <div class="t-column">
     <span class="t-people"></span>
     <div class="t-unlogin">
-      <a href="//passport.vsochina.com/login">开始赚钱，享最高12%收益</a>
+      <a href="#">开始赚钱，享最高12%收益</a>
     </div>
     <div class="t-logined">
       <span>
@@ -287,12 +286,22 @@
           $("body").css('overflow', 'auto');
       }
 
-      var LiH = $('#prom-rank li').height();
-      // 排行榜滚动
-      $("div.list_lh").myScroll({
-        speed: 40, //数值越大，速度越慢
-        rowHeight: LiH //li的高度
-      });
+      // 排行榜数据
+      var str = '';
+      $.ajax({
+        url: '//apinew.vsochina.com/prom/profit/ranking',
+        type: 'get',
+        dataType: "jsonp",
+        jsonp: "jsonpCallback",
+        success: function (res) {
+          if (res.status == 1) {
+            $.each(res.data, function(index, el) {
+              str += '<li><span class="prom-rank-name pull-left">' + el.nickname + '：</span><span class="prom-rank-money pull-right"><i>' + el.incomeTotal + '</i> 元</span></li>'
+            });
+            $('#prom-rank').append(str)
+          }
+        }
+      })
     
       var username = getCookie("vso_uname"),
           usertoken = getCookie("vso_token");
@@ -306,6 +315,10 @@
         newurl = '亲~推荐你一个好用的平台，接单赚钱、找优质服务商、投资方、渲染，注册后还有更多专业服务。 https://www.vsochina.com/studio/newaccount.html#!register' + "?prom=" + username;
         $('.t-logined .copy-hidden').val(newurl)
       }
+
+      $('.t-unlogin a').click(function(event) {
+        window.location.href = "https://passport.vsochina.com/login?lan=zh-CN&redirect_m_url=" + window.location.href.replace('#', '%23');
+      });
 
       $('.t-logined-speed').click(function(event) {
         if (!username || !usertoken) {
@@ -328,23 +341,6 @@
           }
         }
       });
-    })
-	
-	  // 排行榜数据
-    var str = '';
-    $.ajax({
-      url: '//apinew.vsochina.com/prom/profit/ranking',
-      type: 'get',
-      dataType: "jsonp",
-      jsonp: "jsonpCallback",
-      success: function (res) {
-        if (res.status == 1) {
-          $.each(res.data, function(index, el) {
-            str += '<li><span class="prom-rank-name pull-left">' + el.nickname + '：</span><span class="prom-rank-money pull-right"><i>' + el.incomeTotal + '</i> 元</span></li>'
-          });
-          $('#prom-rank').append(str)
-        }
-      }
     })
   </script>
   <!-- 百度统计 -->

@@ -13,7 +13,6 @@
   <script type="text/javascript" src="//static.vsochina.com/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="//static.vsochina.com/vsojs/cookie.js"></script>
   <script type="text/javascript" src="//static.vsochina.com/vsojs/referer_getter.js"></script>
-  <script type="text/javascript" src="js/scroll.js"></script>
   <script type="text/javascript" src="//static.vsochina.com/public/popup/js/vso.popup.js?v=20171106"></script>
   <script>
     // 判断移动端和web端跳转页面
@@ -52,7 +51,7 @@
       <div class="prom-info-left pull-left">
         <p class="prom-info-title">代理商介绍</p>
         <p class="prom-info-content">无门槛注册，注册即可成为平台代理商<br>分享平台产品给好友，好友购买即可获得收益<br>好友越多，赚钱机会越大！</p>
-        <a href="//www.vsochina.com/studio/newaccount.html#!register" class="prom-info-btn">立即注册，成为代理商</a>
+        <a href="//www.vsochina.com/studio/newaccount.html#!register" target="_blank" class="prom-info-btn">立即注册，成为代理商</a>
         <div class="prom-login">
           <input type="text" value="" class="copy-hidden">
           <a href="javascript:;" class="prom-login-left">收益加速</a>
@@ -79,7 +78,7 @@
       <div class="prom-process-right pull-right">
         <p class="prom-process-title">如何赚钱？</p>
         <p class="prom-process-content">分享推广链接，<br>好友通过推广链接登陆或者注册，<br>并购买平台指定服务包，即可获取现金收益！</p>
-        <a href="//www.vsochina.com/studio/newaccount.html#!register" class="prom-info-btn">马上注册，开始赚钱</a>
+        <a href="//www.vsochina.com/studio/newaccount.html#!register" target="_blank" class="prom-info-btn">马上注册，开始赚钱</a>
         <div class="prom-login">
           <input type="text" value="" class="copy-hidden">
           <a href="javascript:;" class="prom-login-left">收益加速</a>
@@ -133,7 +132,7 @@
           </div>
         </div>
       </div>
-      <a href="//www.vsochina.com/studio/newaccount.html#!register" class="prom-info-btn prom-action-btn">抢先注册，好友多多，钱赚多多</a>
+      <a href="//www.vsochina.com/studio/newaccount.html#!register" target="_blank" class="prom-info-btn prom-action-btn">抢先注册，好友多多，钱赚多多</a>
       <div class="prom-login prom-login-center">
         <input type="text" value="" class="copy-hidden">
         <a href="javascript:;" class="prom-login-left">收益加速</a>
@@ -185,7 +184,7 @@
           </a>
         </li>
       </ul>
-      <a href="//www.vsochina.com/studio/newaccount.html#!register" class="prom-info-btn prom-action-btn">一键注册成为代理商</a>
+      <a href="//www.vsochina.com/studio/newaccount.html#!register" target="_blank" class="prom-info-btn prom-action-btn">一键注册成为代理商</a>
       <div class="prom-login prom-login-center">
         <input type="text" value="" class="copy-hidden">
         <a href="javascript:;" class="prom-login-left">收益加速</a>
@@ -198,12 +197,6 @@
   <script type="text/javascript" src="//static.vsochina.com/vsojs/vsofooter.js?v=20171106"></script>
   <script>
     $(function(){
-      // 排行榜滚动
-      $("div.list_lh").myScroll({
-        speed: 40, //数值越大，速度越慢
-        rowHeight: 33 //li的高度
-      });
-
       // 判断是否登录
       if (username) {
         $('.prom-login').show();

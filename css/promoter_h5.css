@@ -279,6 +279,7 @@
 .t-column .copy-hidden {
   position: absolute;
   left: -200rem;
+  ime-mode: disabled;
 }
 
 /* 服务商 */
