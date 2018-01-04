@@ -5,11 +5,13 @@
 	<title>Document</title>
 </head>
 <body>
-	<input type="text" id="txt" autofocus="autofocus">
+	<input class="input-text" id="keywords" name="keywords" placeholder="请输入关键词" type="text">
 	<script src="lib/jquery/jquery-1.12.0.min.js"></script>
 	<script>
-		$('#txt').trigger("click").focus()
-		console.log(1111)
+		function inputFocus(){
+			$("#keywords").trigger("click").focus();
+		}
+		setTimeout("inputFocus()",500);
 	</script>
 </body>
 </html>
