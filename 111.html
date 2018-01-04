@@ -5,10 +5,10 @@
 	<title>Document</title>
 </head>
 <body>
-	<input type="text" id="txt">
+	<input type="text" id="txt" autofocus="autofocus">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script>
-		var oTxt = document.getElementById('txt')
-		oTxt.focus();
+		$('#txt').trigger("click").focus()
 	</script>
 </body>
 </html>
