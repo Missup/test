@@ -1,0 +1,44 @@
+@charset 'utf-8';
+body {
+	padding-top: 2.0rem;
+}
+header {
+	position: fixed;
+	height: 2.0rem;
+	color: #fff;
+	padding: 0 0.6rem;
+	z-index: 200;
+	top: 0;
+	left: 0;
+}
+.header-left {
+	float: left;
+	margin-top: 0.36rem;
+}
+.header-right {
+	float: right;
+	background: url('../images/block.png') no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 0.72rem;
+	height: 0.72rem;
+	margin-top: 0.64rem;
+}
+aside {
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 199;
+	background: #fff;
+	box-shadow: 0 0 0.2rem rgba(0,0,0,.5);
+	width: 6.0rem;
+	padding-top: 2.0rem;
+	height: 100%;
+	display: none;
+}
+aside li {
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	height: 2.0rem;
+	line-height: 2.0rem;
+}
