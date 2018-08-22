@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .copy-hidden {
+            position: absolute;
+            right: 9999px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" value="" class="copy-hidden">
+        <a href="javascript:void(0);" class="t-logined-speed" data-clipboard-text="">加速收益</a>
+    </div>
+
+    <script>
+        function copy(text, options) {
+            var debug, message, range, selection, mark, success = false;
+            if (!options) { options = {}; }
+            debug = options.debug || false;
+            try {
+                reselectPrevious();
+                range = document.createRange();
+                selection = document.getSelection();
+                mark = document.createElement('span');
+                mark.textContent = text;
+                // reset user styles for span element
+                mark.style.all = 'unset';
+                // prevents scrolling to the end of the page
+                mark.style.position = 'fixed';
+                mark.style.top = 0;
+                mark.style.clip = 'rect(0, 0, 0, 0)';
+                // used to preserve spaces and line breaks
+                mark.style.whiteSpace = 'pre';
+                // do not inherit user-select (it may be `none`)
+                mark.style.webkitUserSelect = 'text';
+                mark.style.MozUserSelect = 'text';
+                mark.style.msUserSelect = 'text';
+                mark.style.userSelect = 'text';
+                document.body.appendChild(mark);
+                range.selectNode(mark);
+                selection.addRange(range);
+
+                var successful = document.execCommand('copy');
+                if (!successful) {
+                throw new Error('copy command was unsuccessful');
+                }
+                success = true;
+            } catch (err) {
+                debug && console.error('unable to copy using execCommand: ', err);
+                debug && console.warn('trying IE specific stuff');
+                try {
+                window.clipboardData.setData('text', text);
+                success = true;
+                } catch (err) {
+                debug && console.error('unable to copy using clipboardData: ', err);
+                debug && console.error('falling back to prompt');
+                message = format('message' in options ? options.message : defaultMessage);
+                debug && window.prompt(message, text);
+                }
+            } finally {
+                if (selection) {
+                if (typeof selection.removeRange == 'function') {
+                    selection.removeRange(range);
+                } else {
+                    selection.removeAllRanges();
+                }
+                }
+                if (mark) {
+                document.body.removeChild(mark);
+                }
+                reselectPrevious();
+                return success;
+            }
+            }
+
+            function reselectPrevious () {
+                var selection = document.getSelection();
+                if (!selection.rangeCount) {
+                    return function () {};
+                }
+                var active = document.activeElement;
+
+                var ranges = [];
+                for (var i = 0; i < selection.rangeCount; i++) {
+                    ranges.push(selection.getRangeAt(i));
+                }
+
+                switch (active.tagName.toUpperCase()) { // .toUpperCase handles XHTML
+                    case 'INPUT':
+                    case 'TEXTAREA':
+                    active.blur();
+                    break;
+
+                    default:
+                    active = null;
+                    break;
+                }
+
+                selection.removeAllRanges();
+                return function () {
+                    selection.type === 'Caret' &&
+                    selection.removeAllRanges();
+
+                    if (!selection.rangeCount) {
+                        ranges.forEach(function(range) {
+                            selection.addRange(range);
+                        });
+                    }
+
+                    active && active.focus();
+                };
+            }    
+
+            let obj = document.querySelector('.t-logined-speed')
+            obj.onclick = function () {
+                console.log(222222)
+                newurl = "亲~推荐你一个好用的平台，接单赚钱、找优质服务商、投资方、渲染，注册后还有更多专业服务"
+                // copy(newurl)
+                if (copy(newurl)) {
+                    alert('success')
+                }
+            }
+    </script>
+</body>
+</html>
