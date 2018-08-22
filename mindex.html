@@ -20,7 +20,7 @@
 
     <script>
         function copy(text, options) {
-            var debug, message, range, selection, mark, success = false;
+            var debug, range, selection, mark, success = false;
             if (!options) { options = {}; }
             debug = options.debug || false;
             try {
@@ -60,8 +60,8 @@
                 } catch (err) {
                 debug && console.error('unable to copy using clipboardData: ', err);
                 debug && console.error('falling back to prompt');
-                message = format('message' in options ? options.message : defaultMessage);
-                debug && window.prompt(message, text);
+                // message = format('message' in options ? options.message : defaultMessage);
+                // debug && window.prompt(message, text);
                 }
             } finally {
                 if (selection) {
